@@ -1,0 +1,131 @@
+@media (max-width: 1024px) {
+  .sec-nav {
+    width: 90%;
+  }
+
+  .primary-nav {
+    width: 90%;
+  }
+}
+
+@media (max-width: 993px) {
+  .sec-nav {
+    display: none;
+  }
+
+  .primary-nav {
+    width: 90%;
+  }
+
+  .hero-container {
+    background-position: right;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .primary-nav ul {
+    width: 100%;
+    position: absolute;
+    background-color: #212121;
+    left: -100%;
+    flex-direction: column;
+    top: 70px;
+    text-align: center;
+    transition: 0.6s;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .primary-nav ul li {
+    margin-top: 1rem;
+  }
+
+  .primary-nav ul.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .search-courses h2 {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .search-boxes {
+    grid-template-columns: 100%;
+  }
+
+  .home-courses h2 {
+    font-size: 1.75rem;
+  }
+
+  .award-box {
+    background-position: left center;
+  }
+
+  .gallery h2 {
+    font-size: 1.75rem;
+  }
+
+  .teachers h2 {
+    font-size: 1.75rem;
+  }
+
+  .teachers p {
+    font-size: 12px;
+  }
+
+  .home-testimonial h2 {
+    font-size: 1.75rem;
+  }
+
+  .events h2 {
+    font-size: 1.75rem;
+  }
+
+  .events h3,
+  .events .loc-para,
+  .events .time-para {
+    font-size: 1rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.75rem;
+  }
+
+  .copy-box {
+    flex-direction: column;
+  }
+
+  .icon-box i {
+    margin: 0 0.25rem;
+  }
+
+  @media (max-width: 325px) {
+    .events h2 {
+      font-size: 1.5rem;
+    }
+    .gallery h2 {
+      font-size: 1.5rem;
+    }
+
+    .home-courses .home-courses-card span {
+      font-size: 0.75rem;
+    }
+  }
+}
